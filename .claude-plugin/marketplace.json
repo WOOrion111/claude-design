@@ -1,0 +1,68 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "claude-design",
+  "description": "Hub personale di skill di design, taste e UI/UX per Claude: ogni plugin punta al repository originale, quindi gli aggiornamenti arrivano da upstream senza sincronizzazioni manuali.",
+  "version": "1.0.0",
+  "owner": {
+    "name": "WOOrion111",
+    "url": "https://github.com/WOOrion111"
+  },
+  "plugins": [
+    {
+      "name": "impeccable",
+      "displayName": "Impeccable",
+      "description": "Design fluency per il frontend: quality floor (craft-floor), 24 comandi /impeccable (polish, audit, critique, bolder, quieter, typeset, layout, colorize, animate, distill, harden...) e rilevamento anti-pattern.",
+      "source": { "source": "github", "repo": "pbakaus/impeccable" },
+      "category": "design",
+      "tags": ["design", "frontend", "ui", "polish", "audit"],
+      "homepage": "https://impeccable.style"
+    },
+    {
+      "name": "make-interfaces-feel-better",
+      "displayName": "Make Interfaces Feel Better",
+      "description": "Dettagli di design engineering che rendono un'interfaccia rifinita: raggi concentrici, allineamento ottico, ombre a strati, animazioni interrompibili e sfalsate, hit area, tabular numbers, text-wrap, restraint nel motion.",
+      "source": { "source": "github", "repo": "jakubkrehel/make-interfaces-feel-better" },
+      "skills": "./skills/",
+      "category": "design",
+      "tags": ["design", "polish", "micro-interactions", "ui"],
+      "homepage": "https://github.com/jakubkrehel/make-interfaces-feel-better"
+    },
+    {
+      "name": "transitions-dev",
+      "displayName": "Transitions.dev",
+      "description": "Transizioni CSS production-ready (dropdown, modal, toast, tab, accordion, skeleton, stagger, toggle...) con motion token; include transitions-polish (tuning del motion esistente) e transitions-ui-generation (reveal 'generato dall'agente').",
+      "source": { "source": "git-subdir", "url": "jakubantalik/transitions.dev", "path": "skills" },
+      "skills": "./",
+      "category": "design",
+      "tags": ["css", "transitions", "motion", "animation"],
+      "homepage": "https://transitions.dev"
+    },
+    {
+      "name": "gsap-skills",
+      "displayName": "GSAP (ufficiale)",
+      "description": "Skill ufficiali GreenSock: gsap-core, gsap-timeline, gsap-scrolltrigger, gsap-plugins, gsap-utils, gsap-react, gsap-frameworks, gsap-performance.",
+      "source": { "source": "github", "repo": "greensock/gsap-skills" },
+      "category": "design",
+      "tags": ["gsap", "animation", "scrolltrigger", "react"],
+      "homepage": "https://gsap.com"
+    },
+    {
+      "name": "hallmark",
+      "displayName": "Hallmark",
+      "description": "Anti-slop web design: siti e pagine nuove che sembrano progettate, non generate. Comandi /hallmark <prompt>, /hallmark redesign <path>, /hallmark audit <path>. Da usare su design esistenti solo nominandolo esplicitamente.",
+      "source": { "source": "github", "repo": "Nutlope/hallmark" },
+      "category": "design",
+      "tags": ["design", "landing-page", "anti-ai-slop", "themes"],
+      "homepage": "https://www.usehallmark.com"
+    },
+    {
+      "name": "diagram-design",
+      "displayName": "Diagram Design",
+      "description": "Diagrammi brandizzati in HTML/SVG/PNG: architettura, flowchart, sequence, state machine, ER, timeline, swimlane, quadrant, Sankey, Wardley, Gantt, org chart e molti altri; import da .drawio, Mermaid ed .excalidraw.",
+      "source": { "source": "github", "repo": "cathrynlavery/diagram-design" },
+      "category": "design",
+      "tags": ["diagrams", "svg", "architecture", "mermaid", "drawio"],
+      "homepage": "https://diagramdesign.dev"
+    }
+  ]
+}
